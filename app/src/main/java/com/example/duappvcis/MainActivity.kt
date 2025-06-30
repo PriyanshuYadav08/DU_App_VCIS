@@ -1,20 +1,44 @@
 package com.example.duappvcis
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val locateColleges = findViewById<Button>(R.id.locateColleges)
+        val aboutDU = findViewById<Button>(R.id.aboutDU)
+        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
+        val colDept = findViewById<Button>(R.id.colDept)
+
+        locateColleges.setOnClickListener {
+            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
+        }
+
+        aboutDU.setOnClickListener {
+            openInBrowser("https://www.du.ac.in/index.php?page=about-du-2")
+        }
+
+        coursesOffered.setOnClickListener {
+            openInBrowser("https://www.du.ac.in/index.php?page=syllabi")
+        }
+
+        colDept.setOnClickListener {
+            openInBrowser("https://www.du.ac.in/index.php?page=departments-2")
+        }
+    }
+
+    private fun openInBrowser(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        // Make sure there's a browser available
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
         }
     }
 }
