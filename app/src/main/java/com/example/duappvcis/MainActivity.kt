@@ -13,12 +13,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+          val du_web_btn = findViewById<Button>(R.id.du_web_btn)
 //        val locateColleges = findViewById<Button>(R.id.locateColleges)
 //        val aboutDU = findViewById<Button>(R.id.aboutDU)
 //        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
 //        val colDept = findViewById<Button>(R.id.colDept)
 
+
+          du_web_btn.setOnClickListener {
+              openInBrowser("https://www.du.ac.in/")
+          }
 //        locateColleges.setOnClickListener {
 //            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
 //        }
