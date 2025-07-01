@@ -14,26 +14,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val locateColleges = findViewById<Button>(R.id.locateColleges)
-        val aboutDU = findViewById<Button>(R.id.aboutDU)
-        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
-        val colDept = findViewById<Button>(R.id.colDept)
+//        val locateColleges = findViewById<Button>(R.id.locateColleges)
+//        val aboutDU = findViewById<Button>(R.id.aboutDU)
+//        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
+//        val colDept = findViewById<Button>(R.id.colDept)
 
-        locateColleges.setOnClickListener {
-            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
-        }
-
-        aboutDU.setOnClickListener {
-            openInBrowser("https://www.du.ac.in/index.php?page=about-du-2")
-        }
-
-        coursesOffered.setOnClickListener {
-            openInBrowser("https://www.du.ac.in/index.php?page=syllabi")
-        }
-
-        colDept.setOnClickListener {
-            openInBrowser("https://www.du.ac.in/index.php?page=departments-2")
-        }
+//        locateColleges.setOnClickListener {
+//            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
+//        }
+//
+//        aboutDU.setOnClickListener {
+//            openInBrowser("https://www.du.ac.in/index.php?page=about-du-2")
+//        }
+//
+//        coursesOffered.setOnClickListener {
+//            openInBrowser("https://www.du.ac.in/index.php?page=syllabi")
+//        }
+//
+//        colDept.setOnClickListener {
+//            openInBrowser("https://www.du.ac.in/index.php?page=departments-2")
+//        }
     }
 
     private fun openInBrowser(url: String) {

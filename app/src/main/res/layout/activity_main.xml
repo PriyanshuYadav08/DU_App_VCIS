@@ -5,55 +5,43 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grayDark"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/locateColleges"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:textSize="20sp"
-        android:text="Locate Colleges"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/headerImg"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/purple"/>
+        android:src="@drawable/du_logo"
+        android:contentDescription="My SVG" />
 
-    <Button
-        android:id="@+id/aboutDU"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        app:layout_constraintTop_toBottomOf="@id/locateColleges"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/purple"
-        android:text="About DU"
-        android:textSize="20sp"/>
-
-    <Button
-        android:id="@+id/coursesOffered"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        app:layout_constraintBottom_toTopOf="@id/colDept"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/purple"
-        android:text="Courses Offered"
-        android:textSize="20sp"/>
-
-    <Button
-        android:id="@+id/colDept"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
+    <ScrollView
+        android:id="@+id/mainBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/headerImg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/purple"
-        android:text="Colleges and Departments"
-        android:textSize="20sp"/>
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to the University of Delhi"
+                android:textColor="@color/DU_purple"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/pjs_bold"
+                android:textSize="20sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
