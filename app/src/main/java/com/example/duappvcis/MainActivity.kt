@@ -4,7 +4,9 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,10 +37,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openInBrowser(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        // Make sure there's a browser available
+        val intent = Intent(Intent.ACTION_VIEW, url.toUri())
+        intent.addCategory(Intent.CATEGORY_BROWSABLE)
         if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)
+        } else {
+            Toast.makeText(this, "No browser found to open this link", Toast.LENGTH_SHORT).show()
         }
     }
 }
