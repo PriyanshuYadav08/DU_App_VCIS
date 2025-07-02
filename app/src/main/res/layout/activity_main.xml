@@ -115,7 +115,7 @@
                             android:text="About DU"
                             android:textColor="@color/DU_purple"
                             android:fontFamily="@font/pjs_bold"
-                            android:textSize="16sp"/>
+                            android:textSize="19sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                             android:text="DU Library"
                             android:textColor="@color/DU_purple"
                             android:fontFamily="@font/pjs_bold"
-                            android:textSize="16sp"
+                            android:textSize="19sp"
                             android:layout_marginBottom="10dp"/>
                         <Button
                             android:id="@+id/du_lib_btn"
@@ -216,7 +216,7 @@
                             android:text="Amenities"
                             android:textColor="@color/DU_purple"
                             android:fontFamily="@font/pjs_bold"
-                            android:textSize="16sp"/>
+                            android:textSize="19sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -267,7 +267,7 @@
                             android:text="Syllabi"
                             android:textColor="@color/DU_purple"
                             android:fontFamily="@font/pjs_bold"
-                            android:textSize="16sp"/>
+                            android:textSize="19sp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -285,6 +285,215 @@
                             android:textColor="@color/white"
                             android:backgroundTint="@color/DU_purple"/>
                     </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white"
+                app:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="204dp"
+                        android:layout_height="180dp"
+                        android:paddingStart="5dp"
+                        android:src="@drawable/it_serivces"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingStart="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IT Services"
+                            android:textColor="@color/DU_purple"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textSize="19sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/pjs_semi_bold"
+                            android:padding="8dp"
+                            android:text="DUCC is the central IT institution for UoDand one of the earliest and prestigious computer center of the country"/>
+                        <Button
+                            android:id="@+id/it_services_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/DU_purple"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/gray"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="2dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="डीयू कुलगीत"
+                            android:textColor="@color/DU_purple"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="10dp"/>
+                        <Button
+                            android:id="@+id/du_kulgeet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/DU_purple"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/du_logo"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white"
+                app:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="204dp"
+                        android:layout_height="180dp"
+                        android:paddingStart="5dp"
+                        android:src="@drawable/udhmodya"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingStart="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Udhmodya Foundation"
+                            android:textColor="@color/DU_purple"
+                            android:fontFamily="@font/pjs_bold"
+                            android:gravity="center"
+                            android:textSize="19sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/pjs_semi_bold"
+                            android:padding="8dp"
+                            android:text="The word Udhmodya symbolises the rising Sun embarking on a journey to success through innovation"/>
+                        <Button
+                            android:id="@+id/udm_found_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/DU_purple"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white"
+                app:cardUseCompatPadding="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:paddingStart="5dp"
+                        android:src="@drawable/uod_found"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="University of Delhi Foundation"
+                            android:textColor="@color/DU_purple"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textSize="19sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/pjs_semi_bold"
+                            android:padding="8dp"
+                            android:text="Situated in the historic landscape of the capital city of our country, spread over 407 acers, the University of Delhi was established in 1922"/>
+                        <Button
+                            android:id="@+id/uod_found_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here"
+                            android:fontFamily="@font/pjs_bold"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/DU_purple"/>
+                    </LinearLayout>
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </ScrollView>

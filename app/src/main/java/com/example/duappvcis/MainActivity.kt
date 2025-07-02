@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
           val du_amenities_btn = findViewById<Button>(R.id.du_amenities_btn)
           val campus_map = findViewById<Button>(R.id.campus_map)
           val syllabi_btn = findViewById<Button>(R.id.syllabi_btn)
+          val it_services_btn = findViewById<Button>(R.id.it_services_btn)
+          val du_kulgeet = findViewById<Button>(R.id.du_kulgeet)
+          val udm_found_btn = findViewById<Button>(R.id.udm_found_btn)
+          val uod_found_btn = findViewById<Button>(R.id.uod_found_btn)
 //        val locateColleges = findViewById<Button>(R.id.locateColleges)
 //        val aboutDU = findViewById<Button>(R.id.aboutDU)
 //        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
@@ -42,6 +46,18 @@ class MainActivity : AppCompatActivity() {
           }
           syllabi_btn.setOnClickListener {
               openInBrowser("https://www.du.ac.in/index.php?page=nep-ugcf-2022-syllabi")
+          }
+          it_services_btn.setOnClickListener {
+              openInBrowser("https://ducc.du.ac.in/")
+          }
+          du_kulgeet.setOnClickListener {
+              openInBrowser("https://www.du.ac.in/index.php?page=du-kulgeet")
+          }
+          udm_found_btn.setOnClickListener {
+              openInBrowser("https://www.du.ac.in/index.php?page=udhmodya-foundation")
+          }
+          uod_found_btn.setOnClickListener {
+              openInBrowser("https://duf.du.ac.in/")
           }
 //        locateColleges.setOnClickListener {
 //            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
