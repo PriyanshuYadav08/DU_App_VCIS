@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/headerImg"
-        android:layout_width="225dp"
+        android:layout_width="180dp"
         android:layout_height="60dp"
         android:paddingTop="2dp"
         android:paddingStart="2dp"
@@ -19,6 +19,18 @@
         android:src="@drawable/du_logo"
         android:backgroundTint="@color/white"
         android:contentDescription="My SVG" />
+
+    <Button
+        android:id="@+id/contact_us_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DU_purple"
+        android:text="Contact Us"
+        android:fontFamily="@font/pjs_bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"/>
 
     <ScrollView
         android:id="@+id/mainBody"

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
           val du_kulgeet = findViewById<Button>(R.id.du_kulgeet)
           val udm_found_btn = findViewById<Button>(R.id.udm_found_btn)
           val uod_found_btn = findViewById<Button>(R.id.uod_found_btn)
+          val contact_us_btn = findViewById<Button>(R.id.contact_us_btn)
 //        val locateColleges = findViewById<Button>(R.id.locateColleges)
 //        val aboutDU = findViewById<Button>(R.id.aboutDU)
 //        val coursesOffered = findViewById<Button>(R.id.coursesOffered)
@@ -58,6 +59,9 @@ class MainActivity : AppCompatActivity() {
           }
           uod_found_btn.setOnClickListener {
               openInBrowser("https://duf.du.ac.in/")
+          }
+          contact_us_btn.setOnClickListener {
+              openInBrowser("https://www.du.ac.in/index.php?page=administrative-offices")
           }
 //        locateColleges.setOnClickListener {
 //            openInBrowser("https://www.du.ac.in/index.php?page=colleges-at-du")
