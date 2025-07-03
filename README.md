@@ -23,14 +23,7 @@ The main screen of the application presents several buttons, each corresponding 
 *   The `Intent` data is set to the `Uri` of the corresponding DU webpage.
 *   The app checks if there's an activity (typically a web browser) available to handle the `Intent` before attempting to start it, preventing crashes if no browser is installed.
 
-## Future Enhancements (Example - you'll need to fill this out)
-
-*   Integration of an in-app browser/WebView for a more seamless experience.
-*   Offline access to some information.
-*   Notifications for important DU announcements.
-*   Search functionality within DU resources.
-
-## Setup & Installation (General Android App Instructions)
+## Setup & Installation
 
 1.  Clone the repository: `git clone [your-repository-url]`
 2.  Open the project in Android Studio.
